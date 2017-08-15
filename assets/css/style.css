@@ -3,9 +3,11 @@
 body{font-family: 'Noto Sans', sans-serif;color: #888888}
 h1, h2, h3, h4, h5, h6 {font-family: 'Zilla Slab', serif;}
 
-.slide-bg-1{
-	background-image: url(../img/slide-bg.jpg);
-}
+a:hover, a:focus {text-decoration: none;}
+input:focus, button:focus, textarea:focus{outline: none;}
+
+.slide-bg-1{background-image: url(../img/slide-bg.jpg);}
+.services-bg:before{background-image: url(../img/service-bg.jpg);}
 
 
 .logo {
@@ -66,6 +68,7 @@ h1, h2, h3, h4, h5, h6 {font-family: 'Zilla Slab', serif;}
 
 .slide-text h2 {
     font-size: 60px;
+    color: #fff;
 }
 
 .slide-text h2 span {
@@ -212,3 +215,73 @@ body {
     left: 24px;
     z-index: 3;
 }
+
+.single-service-item {
+    position: relative;
+    padding-left: 100px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    display: block;
+    color: #888;
+}
+
+.service-icon {
+    width: 85px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    color: #22bbc0;
+    font-size: 30px;
+    text-align: center;
+}
+
+.single-service-item
+ h3 {
+    font-size: 20px;
+}
+
+.single-service-item:hover {
+    background: #22bbc0;
+    color: #fff;
+}
+
+.single-service-item:hover h3, .single-service-item:hover .service-icon {
+    color: #fff;
+}
+
+.single-service-item:hover:after {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 5000%;
+    height: 100%;
+    content: "";
+    background-color: #22bbc0;
+}
+
+.services-bg {
+    overflow: hidden;
+    position: relative;
+}
+
+.services-bg:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 51.12%;
+    content: "";
+}
+
+.service-icon-table {
+    height: 100%;
+    display: table;
+    width: 100%;
+}
+
+.service-icon-tablecell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
