@@ -8,6 +8,7 @@ input:focus, button:focus, textarea:focus{outline: none;}
 
 .slide-bg-1{background-image: url(../img/slide-bg.jpg);}
 .services-bg:before{background-image: url(../img/service-bg.jpg);}
+.section-bg-1{background-image: url(../img/section-bg-1.jpg);}
 
 
 .logo {
@@ -285,3 +286,50 @@ body {
     vertical-align: middle;
 }
 
+.single-skill-bar {
+    text-align: center;
+}
+
+.single-skillbar-inner{position: relative;}
+
+span.skill-count-no {
+    font-size: 48px;
+    font-weight: 700;
+    color: #333;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 50%;
+    line-height: 50px;
+    margin-top: -25px;
+}
+
+.single-skill-bar h3 {margin-top: 25px;}
+
+.single-skill-bar {
+    margin: 50px;
+}
+
+.balck-overlay, .balck-overlay h1, .balck-overlay .boxed-btn {
+    color: #fff;
+}
+
+.section-padding {
+    background-size: cover;
+    background-position: center;
+}
+
+.balck-overlay {
+    position: relative;
+    z-index: 2;
+}
+
+.balck-overlay:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+}
