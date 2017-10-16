@@ -48,7 +48,19 @@
 					              elementType: 'labels.text.fill',
 					              stylers: [{color: '#696969'}]
 					            },
-						    ],
+
+					            {
+					              featureType: 'transit',
+					              elementType: 'geometry',
+					              stylers: [{color: '#111111'}]
+					            },
+
+					            {
+					              featureType: 'water',
+					              elementType: 'labels.text.stroke',
+					              stylers: [{color: '#9E46AB'}]
+					            }
+											    ],
 												};
 						var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
 						}
