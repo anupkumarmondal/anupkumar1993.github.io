@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Google Map-2</title>
+
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+
+
+<script src="assets/js/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+	
+	<!-- AIzaSyAsVmO5SskjryjhIJJdP9Z7nng95OLCZGU -->
+
+	<div class="section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+
+					<div id="googleMap" style="width: 100%;height: 500px"></div>
+
+					<script>
+						function myMap() {
+						var mapOptions= {
+						    center:new google.maps.LatLng(23.0045485,89.8268845),
+						    zoom:15,
+						    scrollwheel: false,
+						    styles:[
+						        {elementType: 'geometry', stylers: [{color: '#f7f7f7'}]},
+						        {
+					              featureType: 'road',
+					              elementType: 'geometry',
+					              stylers: [{color: '#ffffff'}]
+					            },
+
+					            {
+					              featureType: 'water',
+					              elementType: 'geometry',
+					              stylers: [{color: '#ededed'}]
+					            },
+
+					            {
+					              featureType: 'road.highway',
+					              elementType: 'labels.text.fill',
+					              stylers: [{color: '#696969'}]
+					            },
+						    ],
+												};
+						var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+						}
+					</script>
+
+
+					<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsVmO5SskjryjhIJJdP9Z7nng95OLCZGU&callback=myMap"></script>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery-circle-progressbar-1.2.2.min.js"></script>
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<script src="assets/js/scripts.js"></script>
+</body>
+</html>
