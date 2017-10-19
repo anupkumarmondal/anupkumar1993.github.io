@@ -5,12 +5,19 @@
 	$('.map')
       .gmap3({
         address: "Gopalganj, Bangladesh",
-        zoom:12,
+        zoom:16,
         mapTypeId: "shadeOfGrey", // to select it directly
         mapTypeControlOptions: {
           mapTypeIds: [google.maps.MapTypeId.ROADMAP, "shadeOfGrey"]
         }
+      });
+        .infowindow({
+        position: uluru,
+        content: "Hello from Uluru"
       })
+      .then(function (infowindow) {
+        infowindow.open(this.get(0)); // this.get(0) return the map (see "get" feature)
+      });
       .styledmaptype(
         "shadeOfGrey",
         [
@@ -31,13 +38,7 @@
         {name: "Shades of Qrey"}
       );
       
-          .infowindow({
-        position: uluru,
-        content: "Hello from Uluru"
-      })
-      .then(function (infowindow) {
-        infowindow.open(this.get(0)); // this.get(0) return the map (see "get" feature)
-      });
+        
 
 	});
 
