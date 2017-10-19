@@ -10,6 +10,10 @@
         mapTypeControlOptions: {
           mapTypeIds: [google.maps.MapTypeId.ROADMAP, "shadeOfGrey"]
         }
+      })
+      .marker({
+        position: center,
+        icon: 'http://maps.google.com/mapfiles/marker_green.png'
       });
         .infowindow({
         position: uluru,
