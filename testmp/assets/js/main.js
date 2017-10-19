@@ -4,7 +4,7 @@
 	jQuery(document).ready(function ($){
 	$('.map')
       .gmap3({
-        address: "Gopalganj, Bangladesh",
+        address: "Dhaka, Bangladesh",
         zoom:12,
         mapTypeId: "shadeOfGrey", // to select it directly
         mapTypeControlOptions: {
