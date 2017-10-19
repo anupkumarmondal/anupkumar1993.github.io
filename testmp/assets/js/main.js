@@ -2,16 +2,15 @@
 	"use strict";
 
 	jQuery(document).ready(function ($){
-	$('.map')
+	 $('.map')
       .gmap3({
-        address: "Gopalganj, Bangladesh",
-        zoom:16,
+        center:[41.850033, -87.650052],
+        zoom:12,
         mapTypeId: "shadeOfGrey", // to select it directly
         mapTypeControlOptions: {
           mapTypeIds: [google.maps.MapTypeId.ROADMAP, "shadeOfGrey"]
         }
       })
-
       .styledmaptype(
         "shadeOfGrey",
         [
@@ -29,7 +28,7 @@
           {"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},
           {"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}
         ],
-        {name: "Shades of Qrey"}
+        {name: "Shades of Grey"}
       );
      
       
