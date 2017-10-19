@@ -10,18 +10,8 @@
         mapTypeControlOptions: {
           mapTypeIds: [google.maps.MapTypeId.ROADMAP, "shadeOfGrey"]
         }
-      });
-      .marker({
-        position: center,
-        icon: 'http://maps.google.com/mapfiles/marker_green.png'
-      });
-        .infowindow({
-        position: uluru,
-        content: "Hello from Uluru"
       })
-      .then(function (infowindow) {
-        infowindow.open(this.get(0)); // this.get(0) return the map (see "get" feature)
-      });
+
       .styledmaptype(
         "shadeOfGrey",
         [
@@ -41,6 +31,11 @@
         ],
         {name: "Shades of Qrey"}
       );
+      .marker({
+        position: center,
+        icon: 'http://maps.google.com/mapfiles/marker_green.png'
+      });
+      
       
         
 
